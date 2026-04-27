@@ -4,9 +4,10 @@ public class Exercicio3 {
 
     public static void main(String[] args) {
 
-        int idade = LerInt("Idade", "Digite sua idade");
-        double peso = LerDouble("Peso", "Digite seu peso");
-
+        int idade;
+        double peso;
+        idade = LerInt("Idade", "Digite sua idade");
+        peso = LerDouble("Peso", "Digite seu peso");
         System.out.println("Idade: " + idade);
         System.out.println("Peso: " + peso);
     }

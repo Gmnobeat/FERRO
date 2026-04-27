@@ -4,10 +4,10 @@ public class Exercicio4 {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanf = new Scanner(System.in);
 
         System.out.println("Digite um texto:");
-        String texto = sc.nextLine();
+        String texto = scanf.nextLine();
 
         String[] palavras = texto.split("[ ,.;]+");
 

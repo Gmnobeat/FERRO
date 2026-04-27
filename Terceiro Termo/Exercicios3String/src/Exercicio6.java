@@ -4,17 +4,15 @@ public class Exercicio6 {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanf = new Scanner(System.in);
 
         System.out.println("Digite um texto:");
-        String frase = sc.nextLine();
+        String frase = scanf.nextLine();
 
         System.out.println("Digite o número de colunas:");
-        int colunas = sc.nextInt();
+        int colunas = scanf.nextInt();
 
         System.out.println(justificar(frase, colunas));
-
-        sc.close();
     }
 
     public static String justificar(String frase, int colunas) {
@@ -23,7 +21,7 @@ public class Exercicio6 {
         String resultado = "";
         String linha = "";
 
-        for(String p : palavras) {
+        for(String p : palavras){
 
             if((linha + p).length() <= colunas) {
                 linha += p + " ";

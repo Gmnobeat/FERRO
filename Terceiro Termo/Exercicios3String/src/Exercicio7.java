@@ -10,8 +10,6 @@ public class Exercicio7 {
         String s = sc.nextLine();
 
         System.out.println(classificar(s));
-
-        sc.close();
     }
 
     public static String classificar(String s) {

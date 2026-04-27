@@ -1,0 +1,263 @@
+1-Version 4.9.9.1
+2-* Many bug fixes
+3-* Improved editor
+4-
+5-Version 4.9.9.0
+6-* Support for latest Mingw compiler system builds
+7-* Bug fixes
+8-
+9-Version 4.9.8.9
+10-* New code tooltip display
+11-* Improved Indent/Unindent and Remove Comment
+12-* Improved automatic indent
+13-* Added support for the "interface" keyword
+14-* WebUpdate should now report installation problems from PackMan
+15-* New splash screen and association icons
+16-* Improved installer
+17-* Many bug fixes
+18-
+19-Version 4.9.8.7
+20-* Added support for GCC > 3.2
+21-* Debug variables are now resent during next debug session
+22-* Watched Variables not in correct context are now kept and updated when it is needed
+23-* Added new compiler/linker options: 
+24-  - Strip executable
+25-  - Generate instructions for a specific machine (i386, i486, i586, i686, pentium, pentium-mmx, pentiumpro, pentium2, pentium3, pentium4, 
+26-    k6, k6-2, k6-3, athlon, athlon-tbird, athlon-4, athlon-xp, athlon-mp, winchip-c6, winchip2, k8, c3 and c3-2)
+27-  - Enable use of processor specific built-in functions (mmmx, sse, sse2, pni, 3dnow)
+28-* "Default" button in Compiler Options is back
+29-* Error messages parsing improved
+30-* Bug fixes
+31-
+32-Version 4.9.8.5
+33-* Added the possibility to modify the value of a variable during debugging (right click on a watch variable and select "Modify value")
+34-* During Dev-C++ First Time COnfiguration window, users can now choose between using or not class browser and code completion features.
+35-* Many bug fixes
+36-
+37-Version 4.9.8.4
+38-* Added the possibility to specify an include directory for the code completion cache to be created at Dev-C++ first startup
+39-* Improved code completion cache
+40-* WebUpdate will now backup downloaded DevPaks in Dev-C++\Packages directory, and Dev-C++ executable in devcpp.exe.BACKUP
+41-* Big speed up in function parameters listing while editing
+42-* Bug fixes
+43-
+44-Version 4.9.8.3
+45-* On Dev-C++ first time configuration dialog, a code completion cache of all the standard 
+46-  include files can now be generated.
+47-* Improved WebUpdate module
+48-* Many bug fixes
+49-
+50-Version 4.9.8.2
+51-* New debug feature for DLLs: attach to a running process
+52-* New project option: Use custom Makefile. 
+53-* New WebUpdater module.
+54-* Allow user to specify an alternate configuration file in Environment Options 
+55-  (still can be overriden by using "-c" command line parameter).
+56-* Lots of bug fixes.
+57-
+58-Version 4.9.8.1
+59-* When creating a DLL, the created static lib respects now the project-defined output directory
+60-
+61-Version 4.9.8.0
+62-* Changed position of compiler/linker parameters in Project Options.
+63-* Improved help file
+64-* Bug fixes
+65-
+66-Version 4.9.7.9
+67-* Resource errors are now reported in the Resource sheet
+68-* Many bug fixes
+69-
+70-Version 4.9.7.8
+71-* Made whole bottom report control floating instead of only debug output.
+72-* Many bug fixes
+73-
+74-Version 4.9.7.7
+75-* Printing settings are now saved
+76-* New environment options : "watch variable under mouse" and "Report watch errors"
+77-* Bug fixes
+78-
+79-Version 4.9.7.6
+80-* Debug variable browser
+81-* Added possibility to include in a Template the Project's directories (include, libs and ressources)
+82-* Changed tint of Class browser pictures colors to match the New Look style
+83-* Bug fixes
+84-
+85-Version 4.9.7.5
+86-* Bug fixes
+87-
+88-Version 4.9.7.4
+89-* When compiling with debugging symbols, an extra definition is passed to the
+90-  compiler: -D__DEBUG__
+91-* Each project creates a <project_name>_private.h file containing version
+92-  information definitions
+93-* When compiling the current file only, no dependency checks are performed
+94-* ~300% Speed-up in class parser
+95-* Added "External programs" in Tools/Environment Options (for units "Open with")
+96-* Added "Open with" in project units context menu
+97-* Added "Classes" toolbar
+98-* Fixed pre-compilation dependency checks to work correctly
+99-* Added new file menu entry: Save Project As
+100-* Bug-fix for double quotes in devcpp.cfg file read by vUpdate
+101-* Other bug fixes
+102-
+103-Version 4.9.7.3
+104-* When adding debugging symbols on request, remove "-s" option from linker
+105-* Compiling progress window
+106-* Environment options : "Show progress window" and "Auto-close progress window"
+107-* Bug fixes
+108-
+109-Version 4.9.7.2
+110-* Bug fixes
+111-
+112-Version 4.9.7.1
+113-* "Build priority" per-unit
+114-* "Include file in linking process" per-unit
+115-* New feature: compile current file only
+116-* Separated C++ compiler options from C compiler options in Makefile (see bug report #654744)
+117-* Separated C++ include dirs from C include dirs in Makefile (see bug report #654744)
+118-* Necessary UI changes in Project Options
+119-* Added display of project filename, project output and a summary of the project files in Project Options General tab.
+120-* Fixed the "compiler-dirs-with-spaces" bug that crept-in in 4.9.7.0
+121-* Multi-select files in project-view (when "double-click to open" is configured in Environment Settings)
+122-* Resource files are treated as ordinary files now
+123-* Updates in "Project Options/Files" code
+124-* MSVC import now creates the folders structure of the original VC project
+125-* Bug fixes
+126-
+127-Version 4.9.7.0
+128-* Allow customizing of per-unit compile command in projects
+129-* Added two new macros: <DATE> and <DATETIME>
+130-* Added support for macros in the "default source code" (Tools/Editor Options/Code)
+131-* Separated layout info from project file. It is now kept in a different file
+132-  (the same filename as the project's but with extension ".layout"). If you
+133-  have your project under CVS control, you ''ll know why this had to happen...
+134-* Compiler settings per-project
+135-* Compiler set per-project
+136-* Implemented new compiler settings framework
+137-* "Compile as C++" per-unit
+138-* "Include file in compilation process" per-unit
+139-* Project version info (creates the relevant VERSIONINFO struct in the private
+140-  resource)
+141-* Support XP Themes (creates the CommonControls 6.0 manifest file and includes
+142-  it in the private resource)
+143-* Added CVS "login" and "logout" commands
+144-* Project manager and debugging window (in Debug tab) can now be trasnformed into floating windows.
+145-* Added "Add Library" button in Project Options
+146-* Bug fixes
+147-
+148-Version 4.9.6.9
+149-* Implemented search in help files for the word at cursor (context sensitive help)
+150-* Implemented "compiler sets" infrastructure to switch between different compilers easily (e.g. gcc-2.95 and gcc-3.2)
+151-* Added "Files" tab in CVS form to allow selection of more than one file for
+152-  the requested CVS action
+153-  
+154-Version 4.9.6.8
+155-* support for DLL application hosting, for debugging and executing DLLs under Dev-C++.
+156-* New class browser option: "Show inherited members"
+157-* Added support for the '::' member access operator in code-completion
+158-* Added *working* function arguments hint
+159-* Added bracket highlighting. When the caret is on a bracket, that bracket and
+160-  its counterpart are highlighted
+161-* Nested folders in project view
+162-
+163-Version 4.9.6.7
+164-* XP Theme support
+165-* Added CVS commands "Add" and "Remove"
+166-* Added configuration option for "Templates Directory" in "Environment Options"
+167-* Code-completion updates
+168-* Bug fixes
+169-
+170-Version 4.9.6.6
+171-* Editor colors are initialized properly on Dev-C++ first-run
+172-* Added doxygen-style comments in NewClass, NewMemberFunction and NewMemberVariable wizards
+173-* Added file's date/time stamp in File/Properties window
+174-* Current windows listing in Window menu
+175-* Bug fixes
+176-
+177-Version 4.9.6.5
+178-* CVS support
+179-* Window list (in Window menu)
+180-* bug fixes
+181-
+182-version 4.9.6.4
+183-* added ENTER key for opening file in project browser, DEL to delete from the project.
+184-* bug fixes
+185-
+186-version 4.9.6.3
+187-* Bug fixes
+188-
+189-version 4.9.6.2
+190-* Bug fixes
+191-
+192-version 4.9.6.1
+193-* New "Abort compilation" button
+194-* Bug fixes
+195-* Now checks for vRoach existance when sending a crash report
+196-
+197-Version 4.9.5.5
+198-* New option in Editor Options: Show editor hints. User can disable the hints
+199-  displayed in the editor when the mouse moves over a word. Since this was the
+200-  cause of many errors (although it should be fixed by now), we are giving the
+201-  user the option to disable this feature.
+202-* New option in Editor Options (code-completion): Use code-completion cache.
+203-  Well, it adds caching to code-completion. Depending on the cache size,
+204-  the program may take a bit longer to start-up, but provides very fast
+205-  code-completion and the user has all the commands (belonging to the files
+206-  he added in the cache) at his fingertips. If, for example, the user adds
+207-  "windows.h", he gets all the WinAPI! If he adds "wx/wx.h", he gets all of
+208-  wxWindows! You get the picture...
+209-* Removed "Only show classes from current file" option in class browser settings.
+210-  It used to be a checkbox, allowing only two states (on or off), but there is
+211-  a third relevant option now: "Project classes" so it didn't fit the purpose...
+212-  The user can define this in the class browser's context menu under "View mode".
+213-* Fixed the dreaded "Clock skew detected" compiler warning!
+214-* Fixed many class browser bugs, including some that had to do with class folders.
+215-
+216-Version 4.9.5.4
+217-* Under NT, 2000 and XP, user application data directory will be used to store config files (i.e : C:\Documents and Settings\Username\Local Settings\Application Data)
+218-
+219-Version 4.9.5.3
+220-* Added ExceptionsAnalyzer. If the devcpp.map file is in the devcpp.exe directory
+221-  then we even get a stack trace in the bug report!
+222-* Added new WebUpdate module (inactive temporarily).
+223-* Added new code for code-completion caching of files (disabled - work in progress).
+224-
+225-Version 4.9.5.2
+226-* Added new option in class-browser: Use colors
+227-  (available when right-clicking the class-browser
+228-  and selecting "View mode").
+229-* Dev-C++ now traps access violation of your programs (and of itself too ;)
+230-
+231-Version 4.9.5.1
+232-* Implemented the "File/Export/Project to HTML" function.
+233-* Added "Tip of the day" system.
+234-* When running a source file in explorer, don't spawn new instance.
+235-  Instead open the file in an already launched Dev-C++.
+236-* Class-parser speed-up (50% to 85% improvement timed!!!)
+237-* Many code-completion updates. Now takes into account context,
+238-  class inheritance and visibility (shows items only from files
+239-  #included directly or indirectly)!
+240-* Caching of result set of code-completion for speed-up.
+241-* New option "Execution/Parameters" (and "Debug/Parameters").
+242-
+243-Version 4.9.5.0 (5.0 beta 5):
+244-* CPU Window (still in development)
+245-* ToDo  list
+246-* Backtrace in debugging
+247-* Run to cursor
+248-* Folders in Project and Class Browser
+249-* Send custom commands to GDB
+250-* Makefile can now be customized.
+251-* Modified the behaviour of the -c param : 
+252-  -c <config file directory>
+253-* Saving of custom syntax parameter group
+254-* Possibility of changing compilers and tools filename.
+255-* Many bug fixes
+256-
+257-
+258-Version 4.9.4.1 (5.0 beta 4.1):
+259-
+260-* back to gcc 2.95.3
+261-* Profiling support
+262-* new update/packages checker (vUpdate)
+263-* Lots of bugfixes
